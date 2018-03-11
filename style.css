@@ -48,6 +48,54 @@ a:hover{text-decoration: none; cursor:pointer;}
 	padding:20px 50px;
 }
 
+/* = Full Screen Blocs 
+-------------------------------------------------------------- */
+
+.bloc-fill-screen{
+	padding-top:0;
+	position: relative;
+	height: inherit;
+	min-height:100vh;
+}
+.bloc-fill-screen > .container{
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+}
+.bloc-fill-screen .fill-bloc-top-edge, .bloc-fill-screen .fill-bloc-bottom-edge{
+	position: absolute;
+	margin: 20px auto;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	transform: none;
+}
+.bloc-fill-screen .fill-bloc-top-edge{
+	top:0;
+}
+.bloc-fill-screen .fill-bloc-bottom-edge{
+	top: initial;
+	bottom: 20px;
+}
+.blocs-hero-btn-dwn{
+	width: 58px;
+	height: 58px;
+	display: block;
+	margin:0 auto;
+	line-height: 58px;
+	padding: 0;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 18px;
+	color: rgba(255,255,255,.8);
+	background: rgba(0,0,0,.6);
+	border:0;
+}
+.blocs-hero-btn-dwn:hover{
+	color: rgba(255,255,255,1);
+}
+
 
 /* Dark theme */
 
@@ -127,12 +175,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 	color:rgba(0,0,0,.7);
 	border-color:rgba(0,0,0,.3);
 }
-/* Dividers */
-
-.b-divider{
-	border-top:1px solid rgba(0,0,0,.1);
-	border-bottom:1px solid rgba(0,0,0,.1);
-}
 
 /* Bloc text custom styling */
 
@@ -140,29 +182,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 	font-size: 80px;
 	font-family: Ubuntu;
 }
-#bloc-2 h6{
-	font-size: 16px;
+#bloc-3 h2{
 	font-family: Ubuntu;
-}
-#bloc-2 h3{
-	font-size: 40px;
-	font-family: Ubuntu;
-}
-#bloc-3 h6{
-	font-size: 16px;
-	font-family: Ubuntu;
-}
-#bloc-3 h3{
-	font-size: 40px;
-	font-family: Ubuntu;
-}
-#bloc-4 h6{
-	font-size: 16px;
-	font-family: Ubuntu;
-}
-#bloc-4 h3{
-	font-size: 40px;
-	font-family: Ubuntu;
+	font-size: 80px;
 }
 #bloc-5 h2{
 	font-family: Ubuntu;
@@ -179,13 +201,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 	font-family: Ubuntu;
 }
 #bloc-9 h2{
-	font-family: Ubuntu;
-	font-size: 80px;
-}
-#bloc-10 h2{
-	font-family: Ubuntu;
-}
-#bloc-11 h2{
 	font-family: Ubuntu;
 }
 
@@ -335,6 +350,22 @@ nav .caret{
 	margin-top:10px;
 	margin-bottom:20px;
 }
+.mg-lg{
+	margin-top:10px;
+	margin-bottom:40px;
+}
+img.mg-sm,img.mg-md,img.mg-lg{
+	margin-top: 0;
+}
+img.mg-sm{
+	margin-bottom:10px;
+}
+img.mg-md{
+	margin-bottom:30px;
+}
+img.mg-lg{
+	margin-bottom:50px;
+}
 
 /* = Buttons
 -------------------------------------------------------------- */
@@ -355,6 +386,18 @@ button{
 	outline: none!important;
 }
 
+.btn-wire{
+	background:transparent!important;
+	border:2px solid transparent;
+}
+.btn-wire:hover{
+	background:transparent!important;
+	border:2px solid transparent;
+}
+.btn-xl{
+	padding: 16px 40px;
+	font-size: 28px;
+}
 
 
 
@@ -415,6 +458,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-family:"Alef";
 	font-size:35px;
 	text-transform:none;
+}
+.hero-bloc-text{
+	font-size:55px;
+}
+.hero-bloc-text-sub{
+	font-size:36px;
 }
 
 /* = Colour
